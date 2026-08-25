@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Admin — Toolbench</title>
+
+  <meta
+    name="description"
+    content="Toolbench affiliate program administration."
+  >
+
+  <link rel="icon" href="data:,"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="admin.css"
+  >
+</head>
+
+<body>
+
+  <!-- ========================================================
+       HEADER
+       ======================================================== -->
+
+  <header class="admin-header">
+
+    <div class="admin-header-inner">
+
+      <div>
+        <a
+          href="../index.html"
+          class="admin-logo"
+        >
+          TOOLBENCH<span>.</span>
+        </a>
+      </div>
+
+      <div class="admin-label">
+        Affiliate Program Manager
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ========================================================
+       MAIN
+       ======================================================== -->
+
+  <main class="admin-main">
+
+    <!-- PAGE HEADING -->
+
+    <section class="page-heading">
+
+      <div class="eyebrow">
+        Admin / Affiliate Programs
+      </div>
+
+      <h1>
+        Affiliate program manager
+      </h1>
+
+      <p>
+        Manage affiliate URLs, commissions, networks,
+        application status, and program notes.
+      </p>
+
+    </section>
+
+
+    <!-- ======================================================
+         STATUS BAR
+         ====================================================== -->
+
+    <div class="status-bar">
+
+      <div class="status-left">
+
+        <span
+          id="statusDot"
+          class="status-dot"
+        ></span>
+
+        <span
+          id="statusText"
+          class="status-text"
+        >
+          Loading affiliate programs...
+        </span>
+
+      </div>
+
+      <div>
+        <span class="status-count">
+          Programs:
+        </span>
+
+        <span
+          id="programCount"
+          class="status-count"
+        >
+          0 / 0
+        </span>
+      </div>
+
+    </div>
+
+
+    <!-- ======================================================
+         TOOLBAR
+         ====================================================== -->
+
+    <section class="toolbar">
+
+      <!-- SEARCH -->
+
+      <div class="search-box">
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search programs..."
+          autocomplete="off"
+        >
+
+      </div>
+
+
+      <!-- CATEGORY -->
+
+      <div class="filter-box">
+
+        <select id="categoryFilter">
+
+          <option value="">
+            All categories
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- STATUS -->
+
+      <div class="filter-box">
+
+        <select id="statusFilter">
+
+          <option value="">
+            All statuses
+          </option>
+
+          <option value="Open">
+            Open
+          </option>
+
+          <option value="Pending">
+            Pending
+          </option>
+
+          <option value="Closed">
+            Closed
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- ADD -->
+
+      <button
+        id="addButton"
+        type="button"
+        class="btn btn-accent"
+      >
+        + Add program
+      </button>
+
+
+      <!-- EXPORT -->
+
+      <button
+        id="exportButton"
+        type="button"
+        class="btn"
+      >
+        Export JSON
+      </button>
+
+    </section>
+
+
+    <!-- ======================================================
+         PROGRAM GRID
+         ====================================================== -->
+
+    <section
+      id="programGrid"
+      class="program-grid"
+      aria-live="polite"
+    >
+
+      <div class="empty-state">
+
+        <h2>
+          Loading programs...
+        </h2>
+
+        <p>
+          Reading affiliate-programs.json
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+  <!-- ========================================================
+     TOOLBENCH COPILOT
+     Local AI-style intelligence layer
+     ======================================================== -->
+
+<section class="copilot-section">
+
+  <div class="copilot-header">
+
+    <div>
+      <div class="eyebrow">
+        TOOLBENCH / COPILOT
+      </div>
+
+      <h2>
+        Affiliate Intelligence
+      </h2>
+
+      <p>
+        Analyze your affiliate database without using an external AI API.
+      </p>
+    </div>
+
+    <button
+      id="clearCopilot"
+      type="button"
+      class="btn btn-small"
+    >
+      Clear
+    </button>
+
+  </div>
+
+
+  <!-- ======================================================
+       STATS
+       ====================================================== -->
+
+  <div class="copilot-stats">
+
+    <div class="copilot-stat">
+      <span class="copilot-stat-label">
+        Programs
+      </span>
+
+      <strong id="copilotProgramCount">
+        0
+      </strong>
+    </div>
+
+
+    <div class="copilot-stat">
+      <span class="copilot-stat-label">
+        Affiliate URLs
+      </span>
+
+      <strong id="copilotAffiliateCount">
+        0
+      </strong>
+    </div>
+
+
+    <div class="copilot-stat">
+      <span class="copilot-stat-label">
+        Websites
+      </span>
+
+      <strong id="copilotWebsiteCount">
+        0
+      </strong>
+    </div>
+
+
+    <div class="copilot-stat">
+      <span class="copilot-stat-label">
+        Missing fields
+      </span>
+
+      <strong id="copilotMissingCount">
+        0
+      </strong>
+    </div>
+
+  </div>
+
+
+  <!-- ======================================================
+       QUICK ACTIONS
+       ====================================================== -->
+
+  <div class="copilot-actions">
+
+    <button
+      type="button"
+      class="btn"
+      data-copilot-action="overview"
+    >
+      Overview
+    </button>
+
+    <button
+      type="button"
+      class="btn"
+      data-copilot-action="missing"
+    >
+      Check missing data
+    </button>
+
+    <button
+      type="button"
+      class="btn"
+      data-copilot-action="urls"
+    >
+      Check URLs
+    </button>
+
+    <button
+      type="button"
+      class="btn"
+      data-copilot-action="categories"
+    >
+      Categories
+    </button>
+
+    <button
+      type="button"
+      class="btn"
+      data-copilot-action="opportunities"
+    >
+      Opportunities
+    </button>
+
+  </div>
+
+
+  <!-- ======================================================
+       CHAT
+       ====================================================== -->
+
+  <div class="copilot-panel">
+
+    <div
+      id="copilotMessages"
+      class="copilot-messages"
+      aria-live="polite"
+    >
+
+      <div class="copilot-message assistant">
+
+        <div class="message-label">
+          TOOLBENCH COPILOT
+        </div>
+
+        <p>
+          Local Copilot ready.
+          I can analyze the affiliate database without
+          using an external AI API.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <form
+      id="copilotForm"
+      class="copilot-form"
+    >
+
+      <input
+        id="copilotInput"
+        type="text"
+        autocomplete="off"
+        placeholder="Ask: show missing data..."
+      >
+
+      <button
+        type="submit"
+        class="btn btn-accent"
+      >
+        Run
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+  <!-- ========================================================
+       EDIT / ADD MODAL
+       ======================================================== -->
+
+  <div
+    id="editModal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+  >
+
+    <div class="modal-panel">
+
+
+      <!-- MODAL HEADER -->
+
+      <div class="modal-header">
+
+        <h2 id="modalTitle">
+          Edit Affiliate Program
+        </h2>
+
+        <button
+          id="closeModal"
+          type="button"
+          class="modal-close"
+          aria-label="Close"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <!-- MODAL BODY -->
+
+      <form
+        id="programForm"
+        class="modal-body"
+      >
+
+        <div class="form-grid">
+
+
+          <!-- BRAND -->
+
+          <div class="form-group">
+
+            <label for="brand">
+              Brand
+            </label>
+
+            <input
+              id="brand"
+              name="brand"
+              type="text"
+              placeholder="Jasper"
+              required
+            >
+
+          </div>
+
+
+          <!-- CATEGORY -->
+
+          <div class="form-group">
+
+            <label for="category">
+              Category
+            </label>
+
+            <input
+              id="category"
+              name="category"
+              type="text"
+              placeholder="AI Writing"
+            >
+
+          </div>
+
+
+          <!-- WEBSITE -->
+
+          <div class="form-group full">
+
+            <label for="website">
+              Website
+            </label>
+
+            <input
+              id="website"
+              name="website"
+              type="url"
+              placeholder="https://example.com"
+            >
+
+            <div class="form-help">
+              Main website for the tool.
+            </div>
+
+          </div>
+
+
+          <!-- AFFILIATE URL -->
+
+          <div class="form-group full">
+
+            <label for="affiliateUrl">
+              Affiliate URL
+            </label>
+
+            <input
+              id="affiliateUrl"
+              name="affiliateUrl"
+              type="url"
+              placeholder="https://example.com/affiliate"
+            >
+
+            <div class="form-help">
+              The URL used by the Visit Site button
+              on the public Tools page.
+            </div>
+
+          </div>
+
+
+          <!-- COMMISSION -->
+
+          <div class="form-group">
+
+            <label for="commission">
+              Commission
+            </label>
+
+            <input
+              id="commission"
+              name="commission"
+              type="text"
+              placeholder="20% recurring for 12 months"
+            >
+
+          </div>
+
+
+          <!-- COOKIE -->
+
+          <div class="form-group">
+
+            <label for="cookie">
+              Cookie
+            </label>
+
+            <input
+              id="cookie"
+              name="cookie"
+              type="text"
+              placeholder="60 days"
+            >
+
+          </div>
+
+
+          <!-- NETWORK -->
+
+          <div class="form-group">
+
+            <label for="affiliateNetwork">
+              Affiliate Network
+            </label>
+
+            <input
+              id="affiliateNetwork"
+              name="affiliateNetwork"
+              type="text"
+              placeholder="Impact"
+            >
+
+          </div>
+
+
+          <!-- STATUS -->
+
+          <div class="form-group">
+
+            <label for="applicationStatus">
+              Application Status
+            </label>
+
+            <select
+              id="applicationStatus"
+              name="applicationStatus"
+            >
+
+              <option value="Open">
+                Open
+              </option>
+
+              <option value="Pending">
+                Pending
+              </option>
+
+              <option value="Closed">
+                Closed
+              </option>
+
+              <option value="Rejected">
+                Rejected
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- NOTES -->
+
+          <div class="form-group full">
+
+            <label for="notes">
+              Notes
+            </label>
+
+            <textarea
+              id="notes"
+              name="notes"
+              placeholder="Affiliate program notes..."
+            ></textarea>
+
+          </div>
+
+        </div>
+
+      </form>
+
+
+      <!-- MODAL FOOTER -->
+
+      <div class="modal-footer">
+
+        <div>
+
+          <button
+            type="button"
+            class="btn btn-danger btn-small"
+            id="cancelModal"
+          >
+            Cancel
+          </button>
+
+        </div>
+
+        <div class="modal-footer-right">
+
+          <button
+            type="button"
+            class="btn btn-small"
+            id="closeModalBottom"
+          >
+            Close
+          </button>
+
+          <button
+            type="submit"
+            form="programForm"
+            class="btn btn-primary"
+          >
+            Save program
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================================================
+       TOAST
+       ======================================================== -->
+
+  <div
+    id="toast"
+    class="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+
+  <footer class="admin-footer">
+
+    <div class="admin-footer-inner">
+
+      TOOLBENCH / ADMIN /
+      Affiliate Program Manager
+
+    </div>
+
+  </footer>
+
+
+  <!-- ========================================================
+       JAVASCRIPT
+       ======================================================== -->
+
+  <script src="admin.js"></script>
+
+</body>
+</html>

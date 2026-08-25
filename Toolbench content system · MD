@@ -1,0 +1,67 @@
+# Toolbench — ระบบสร้างบทความด้วย AI (ใช้ซ้ำได้ทุกครั้ง)
+
+วิธีใช้: คัดลอก **Prompt Template** ด้านล่างไปวางใน Claude หรือ ChatGPT ทุกครั้งที่จะเขียนบทความใหม่ แค่เปลี่ยนหัวข้อ/tool ตรงวงเล็บ `[...]` แล้วรัน จากนั้นทำตาม **Checklist ก่อนโพสต์** เพื่อให้เนื้อหาผ่านมาตรฐาน "field-tested" ของเว็บ ไม่ใช่ AI generic
+
+---
+
+## Prompt Template (คัดลอกทั้งหมดนี้)
+
+```
+คุณกำลังเขียนบทความให้เว็บไซต์ "Toolbench" ซึ่งรีวิว AI tools สำหรับธุรกิจขนาดเล็ก
+โทนเสียงของเว็บ: ตรงไปตรงมา ไม่โฆษณาเกินจริง พูดจุดอ่อนของ tool ตรงๆ
+เขียนเหมือนคนที่ใช้ tool จริงแล้วมารายงาน ไม่ใช่ copywriter ที่ยกยอทุกตัว
+
+หัวข้อบทความ: [ใส่หัวข้อ เช่น "Best SEO Tools for Small Business 2026"]
+Tool ที่ต้องพูดถึง: [ใส่รายชื่อ tool 3-6 ตัว จาก affiliate-programs.csv]
+กลุ่มเป้าหมาย: เจ้าของธุรกิจขนาดเล็กที่ไม่ใช่สาย tech ลึก
+
+โครงสร้างที่ต้องการ:
+1. Intro สั้นๆ (3-4 ประโยค) บอกว่าบทความนี้ช่วยแก้ปัญหาอะไร
+2. สำหรับแต่ละ tool ให้เขียน:
+   - ใช้ดีที่สุดตอนไหน / เหมาะกับใคร
+   - จุดอ่อนหรือข้อจำกัดที่ควรรู้ก่อนสมัคร (ต้องมีเสมอ ห้ามข้าม)
+   - เทียบกับ tool ตัวอื่นในลิสต์สั้นๆ ว่าต่างกันตรงไหน
+3. บทสรุปท้ายบทความ: แนะนำว่าควรเริ่มจาก tool ไหนก่อนตามสถานการณ์
+
+ข้อห้าม:
+- ห้ามอ้างตัวเลข/สถิติที่ไม่มีแหล่งอ้างอิงจริง (เช่น "ช่วยเพิ่มยอดขาย 300%")
+- ห้ามใช้คำโฆษณาเวอร์ๆ เช่น "revolutionary", "game-changing", "must-have"
+- ห้ามเขียนทุก tool ให้ดูดีเท่ากันหมด ต้องมีจุดต่างและจุดอ่อนจริง
+- ความยาวแต่ละ tool ประมาณ 80-120 คำ ไม่ยืดเยื้อ
+
+เขียนเป็นภาษาอังกฤษ (เว็บใช้ภาษาอังกฤษเป็นหลัก) ให้พร้อมนำไปใส่ใน section การ์ดของเว็บได้เลย
+```
+
+---
+
+## หลังได้ draft จาก AI แล้ว ทำ 3 อย่างนี้ก่อนโพสต์เสมอ
+
+1. **อ่านทวนเอง 1 รอบ** — แก้จุดที่ AI เขียนดูเป็น "แม่แบบทั่วไป" ให้เป็นน้ำเสียงจริงของคุณ อย่างน้อยแก้ 20-30% ของข้อความ
+2. **เช็คข้อเท็จจริง** — ราคา, ฟีเจอร์, ข้อจำกัดที่ AI อ้างถึง ต้องตรงกับหน้าเว็บจริงของ tool นั้น (AI อาจข้อมูลเก่าหรือมั่ว)
+3. **ใส่ CTA slot ตามฟอร์แมตเว็บ** — เอา output ที่ได้มาใส่ในโครงสร้าง HTML แบบนี้ (ตามที่ใช้ใน `tools.html`):
+
+```html
+<div class="card" style="margin: 24px 0;">
+  <span class="tag">[หมวดหมู่]</span>
+  <h3 style="margin-top:8px;">[ชื่อ Tool]</h3>
+  <p>[เนื้อหาที่ AI ร่างมา ผ่านการแก้แล้ว]</p>
+  <div class="cta-slot">
+    <span>affiliate_link: pending</span>
+    <a href="#" class="btn btn-accent is-placeholder" aria-disabled="true">Visit [ชื่อ Tool]</a>
+  </div>
+</div>
+```
+
+---
+
+## หัวข้อบทความที่ควรทำต่อ (เรียงตามลำดับแนะนำ)
+
+| ลำดับ | หัวข้อ | Tool อ้างอิงจาก CSV |
+|---|---|---|
+| 1 | Best SEO Tools for Small Business 2026 | Semrush, Surfer SEO, Frase, Mangools, Ahrefs |
+| 2 | Best AI Video Tools for Small Business 2026 | Synthesia, InVideo, Veed.io, HeyGen, Descript |
+| 3 | Best AI Voice Tools for Content Creators | ElevenLabs, Murf |
+| 4 | Notion vs Systeme.io vs HubSpot: Which CRM Fits Your Business Stage | Systeme.io, HubSpot, GetResponse |
+| 5 | Jasper vs Copy.ai vs Writesonic: AI Writing Tool Comparison | Jasper, Copy.ai, Writesonic, Rytr |
+
+ทำทีละหัวข้อ ใช้ prompt เดิมด้านบน เปลี่ยนแค่หัวข้อกับ tool แล้วรัน — ไม่ต้องเขียน prompt ใหม่ทุกครั้ง

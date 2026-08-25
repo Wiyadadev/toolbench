@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best SEO Tools for Small Businesses in 2026 — Toolbench</title>
+<meta name="description" content="A practical comparison of Semrush, Surfer SEO, Frase, Mangools, and Ahrefs — what each is actually good for, and where each one falls short.">
+<link rel="stylesheet" href="styles.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">TOOLBENCH<span class="logo-dot">.</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="tools.html">Tools</a>
+      <a href="best-ai-tools-small-business-2026.html">Reports</a>
+      <a href="affiliate-disclosure.html">Disclosure</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="tight">
+    <div class="wrap prose article-hero">
+      <span class="tag">Report · Updated 2026</span>
+      <h1>Best SEO Tools for Small Businesses in 2026</h1>
+      <p class="byline">By the Toolbench team · 9 min read</p>
+      <p>Five tools show up again and again in small-business SEO recommendations: Semrush, Surfer SEO, Frase, Mangools, and Ahrefs. They're not interchangeable — each solves a different part of the problem, and buying the wrong one first is the most common way small businesses waste an SEO budget. Here's what each is actually for.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap prose">
+
+      <h2>Start with the question, not the tool</h2>
+      <p>Before picking any tool here, decide which question you're actually trying to answer: "what should I write about," "why isn't this page ranking," or "what are my competitors doing that I'm not." Each tool below answers a different one of those.</p>
+
+      <div class="card" style="margin: 24px 0;">
+        <span class="tag">SEO Suite</span>
+        <h3 style="margin-top:8px;">Semrush</h3>
+        <p>Best for: businesses that want one dashboard covering keyword research, rank tracking, and competitor audits at once. If you want to see exactly which keywords a competitor ranks for that you don't, this is the fastest way to find out.</p>
+        <p>Where it falls short: the interface throws a lot at you on day one, and it's easy to pay for features you never open. Budget a few hours to learn the parts you actually need before judging whether it's worth the price.</p>
+        <p>Versus the others: broader and more expensive than Mangools or Frase, narrower on content-specific guidance than Surfer.</p>
+        <div class="cta-slot">
+          <span>affiliate_link: pending</span>
+          <a href="#" class="btn btn-accent is-placeholder" aria-disabled="true">Visit Semrush</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin: 24px 0;">
+        <span class="tag">Content Optimization</span>
+        <h3 style="margin-top:8px;">Surfer SEO</h3>
+        <p>Best for: businesses that already know what keyword they're targeting and want to know why a specific draft isn't ranking. It scores your draft against pages currently ranking for that term and tells you what's thin or missing.</p>
+        <p>Where it falls short: it doesn't help you find keywords in the first place — you need a research tool like Semrush or Mangools feeding it targets, or you're optimizing blind.</p>
+        <p>Versus the others: the most tactical, page-level tool on this list. Pair it with a research tool rather than using it alone.</p>
+        <div class="cta-slot">
+          <span>affiliate_link: pending</span>
+          <a href="#" class="btn btn-accent is-placeholder" aria-disabled="true">Visit Surfer SEO</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin: 24px 0;">
+        <span class="tag">Content Optimization</span>
+        <h3 style="margin-top:8px;">Frase</h3>
+        <p>Best for: small teams that write content themselves and want a lighter, cheaper alternative to Surfer for the same "does this draft cover what's needed" question. It also drafts content outlines from the top-ranking pages for a keyword.</p>
+        <p>Where it falls short: the outline and answer-engine features can feel generic if you don't edit heavily — this is a starting point for a draft, not a finished article.</p>
+        <p>Versus the others: cheaper entry point than Surfer for the same core job, with a smaller feature set overall.</p>
+        <div class="cta-slot">
+          <span>affiliate_link: pending</span>
+          <a href="#" class="btn btn-accent is-placeholder" aria-disabled="true">Visit Frase</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin: 24px 0;">
+        <span class="tag">Keyword Research</span>
+        <h3 style="margin-top:8px;">Mangools</h3>
+        <p>Best for: a first SEO tool if Semrush feels like too much, too soon. KWFinder (its keyword tool) is built around one clear question — what should I write about — with a simpler interface than the bigger suites.</p>
+        <p>Where it falls short: shallower competitor-audit and technical-SEO features than Semrush or Ahrefs. You'll likely outgrow it once your SEO effort matures.</p>
+        <p>Versus the others: the friendliest on-ramp on this list, at the cost of depth once you need it.</p>
+        <div class="cta-slot">
+          <span>affiliate_link: pending</span>
+          <a href="#" class="btn btn-accent is-placeholder" aria-disabled="true">Visit Mangools</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin: 24px 0;">
+        <span class="tag">SEO Suite</span>
+        <h3 style="margin-top:8px;">Ahrefs</h3>
+        <p>Best for: backlink analysis specifically — understanding who links to a competitor and why, and finding sites that might link to you too. Its backlink index is generally considered one of the most complete in the category.</p>
+        <p>Where it falls short: similar learning curve to Semrush, and the two overlap enough that most small businesses only need one, not both.</p>
+        <p>Versus the others: strongest specifically on backlinks; Semrush edges it out on breadth of features for a generalist first tool.</p>
+        <div class="cta-slot">
+          <span>affiliate_link: pending</span>
+          <a href="#" class="btn btn-accent is-placeholder" aria-disabled="true">Visit Ahrefs</a>
+        </div>
+      </div>
+
+      <h2>Which one should you start with</h2>
+      <p>If you've never used an SEO tool before, start with Mangools — it answers the single most useful question ("what should I write about") without overwhelming you. Once you have content published and want to know why specific pages aren't ranking, add Surfer or Frase. Reach for Semrush or Ahrefs once you're ready to study competitors in depth, not before — both are more tool than most businesses need on day one.</p>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-col">
+      <h4>Toolbench</h4>
+      <a href="index.html">Home</a>
+      <a href="tools.html">Tested tools</a>
+      <a href="best-ai-tools-small-business-2026.html">Reports</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Toolbench. Independently tested. Some links on this site are affiliate links — see our disclosure.
+  </div>
+</footer>
+
+</body>
+</html>
