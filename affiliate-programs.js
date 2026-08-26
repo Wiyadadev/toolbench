@@ -1,222 +1,146 @@
-[
-  {
-    "brand": "Jasper",
-    "category": "AI Writing",
-    "website": "https://www.jasper.ai",
-    "commission": "25% recurring (12 months); 30% after 100 leads converted",
-    "cookie": "14-45 days (sources vary; confirm in dashboard)",
-    "affiliateNetwork": "FirstPromoter (some listings show Impact)",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://www.jasper.ai/partners",
-    "notes": "Official terms at jasper.ai/legal/affiliates. No branded-keyword bidding allowed. Business plan excluded from commission."
-  },
-  {
-    "brand": "Writesonic",
-    "category": "AI Writing",
-    "website": "https://writesonic.com",
-    "commission": "20% recurring up to 12 months",
-    "cookie": "60 days",
-    "affiliateNetwork": "FirstPromoter",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://writesonic.com/affiliate",
-    "notes": "Good fit for content/copywriting-focused articles."
-  },
-  {
-    "brand": "Rytr",
-    "category": "AI Writing",
-    "website": "https://rytr.me",
-    "commission": "30% recurring for 12 months",
-    "cookie": "60 days",
-    "affiliateNetwork": "Self-hosted",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://rytr.me/affiliates",
-    "notes": "Budget-friendly AI writer; easier approval than Jasper/Copy.ai."
-  },
-  {
-    "brand": "Grammarly",
-    "category": "AI Writing / Editing",
-    "website": "https://www.grammarly.com",
-    "commission": "$0.20 per free signup + $20 per paid upgrade (one-time)",
-    "cookie": "90 days",
-    "affiliateNetwork": "Impact",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://www.grammarly.com/affiliates",
-    "notes": "Two-step payout (signup + upgrade) means free-tier content can still earn."
-  },
-  {
-    "brand": "Copy.ai",
-    "category": "AI Writing",
-    "website": "https://www.copy.ai",
-    "commission": "Rate not published on official page; third-party estimates 20-45%",
-    "cookie": "60 days (third-party estimate)",
-    "affiliateNetwork": "In-house (apply via affiliates.copy.ai)",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://affiliates.copy.ai/apply",
-    "notes": "Official page does not publish fixed terms - confirm exact rate after approval."
-  },
-  {
-    "brand": "Semrush",
-    "category": "SEO / Content Tools",
-    "website": "https://www.semrush.com",
-    "commission": "$100-$300 per sale (up to $450) + $10 per trial",
-    "cookie": "120 days",
-    "affiliateNetwork": "Impact",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://www.semrush.com/lp/affiliate-program/en/",
-    "notes": "One of the highest flat payouts in the SEO tool category."
-  },
-  {
-    "brand": "Surfer SEO",
-    "category": "SEO / Content Optimization",
-    "website": "https://surferseo.com",
-    "commission": "Tiered CPA: 75-125% of monthly sub, 15-25% of annual",
-    "cookie": "Not published",
-    "affiliateNetwork": "PartnerStack",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://surferseo.com/affiliate-program/",
-    "notes": "Reward scales up after 10 and 50 customers referred."
-  },
-  {
-    "brand": "Frase",
-    "category": "SEO / Content Optimization",
-    "website": "https://www.frase.io",
-    "commission": "30% recurring for 12 months (incl. renewals)",
-    "cookie": "60 days",
-    "affiliateNetwork": "FirstPromoter",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://www.frase.io/partners/affiliates",
-    "notes": "Smaller brand"
-  },
-  {
-    "brand": "Ahrefs",
-    "category": "SEO",
-    "website": "https://ahrefs.com",
-    "commission": "~30% recurring monthly",
-    "cookie": "Not confirmed on official page",
-    "affiliateNetwork": "In-house / Impact (varies by listing)",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://ahrefs.com/affiliate-program",
-    "notes": "Premium SEO tool; strong brand recognition for review/comparison content."
-  },
-  {
-    "brand": "Mangools",
-    "category": "SEO (KWFinder)",
-    "website": "https://mangools.com",
-    "commission": "35% lifetime recurring",
-    "cookie": "30 days",
-    "affiliateNetwork": "In-house",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://mangools.com/affiliate",
-    "notes": "Beginner-friendly SEO tool; lifetime recurring is rare in this category."
-  },
-  {
-    "brand": "Systeme.io",
-    "category": "Marketing / Funnel Builder",
-    "website": "https://systeme.io",
-    "commission": "60% recurring commission for the customer's lifetime",
-    "cookie": "Lifetime (no expiry)",
-    "affiliateNetwork": "In-house",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://systeme.io/affiliate-program",
-    "notes": "Highest confirmed recurring rate researched; good for small-business marketing content."
-  },
-  {
-    "brand": "GetResponse",
-    "category": "Email Marketing",
-    "website": "https://www.getresponse.com",
-    "commission": "33% recurring OR $100 one-time bounty (affiliate chooses plan type)",
-    "cookie": "Not published",
-    "affiliateNetwork": "In-house",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://www.getresponse.com/affiliate-programs",
-    "notes": "Lets you pick recurring vs. one-time model per campaign."
-  },
-  {
-    "brand": "Synthesia",
-    "category": "AI Video",
-    "website": "https://www.synthesia.io",
-    "commission": "25% of first-year payments (one-time)",
-    "cookie": "60 days",
-    "affiliateNetwork": "Rewardful",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://www.synthesia.io/partners/affiliates",
-    "notes": "Strong fit for \"AI video for small business\" content angle."
-  },
-  {
-    "brand": "InVideo",
-    "category": "AI Video",
-    "website": "https://invideo.io",
-    "commission": "50% of first month (monthly) / 25% of first year (annual)",
-    "cookie": "120 days",
-    "affiliateNetwork": "Impact",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://invideo.io/make/affiliate-program/",
-    "notes": "Long 120-day cookie is useful for slower-converting comparison content."
-  },
-  {
-    "brand": "Veed.io",
-    "category": "AI Video",
-    "website": "https://www.veed.io",
-    "commission": "20% initial + 20% recurring (bonus tiers up to 50%)",
-    "cookie": "Not published",
-    "affiliateNetwork": "Impact",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://www.veed.io/affiliate",
-    "notes": "Tiered structure rewards volume over time."
-  },
-  {
-    "brand": "HeyGen",
-    "category": "AI Video (avatars)",
-    "website": "https://www.heygen.com",
-    "commission": "20% recurring for 12 months",
-    "cookie": "60 days",
-    "affiliateNetwork": "Rewardful",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://heygen.getrewardful.com/",
-    "notes": "Popular for AI-avatar / explainer-video use cases."
-  },
-  {
-    "brand": "Descript",
-    "category": "AI Video/Audio Editing",
-    "website": "https://www.descript.com",
-    "commission": "$25 flat per subscriber (one-time)",
-    "cookie": "Not published",
-    "affiliateNetwork": "PartnerStack",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://www.descript.com/affiliate",
-    "notes": "Simple flat bounty; easy to model earnings."
-  },
-  {
-    "brand": "ElevenLabs",
-    "category": "AI Voice",
-    "website": "https://elevenlabs.io",
-    "commission": "22% for 12 months (11% on Business plan)",
-    "cookie": "90 days",
-    "affiliateNetwork": "PartnerStack",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://elevenlabs.io/affiliates",
-    "notes": "Leading AI voice/text-to-speech tool; growing search demand."
-  },
-  {
-    "brand": "Murf",
-    "category": "AI Voice",
-    "website": "https://murf.ai",
-    "commission": "20% recurring for 24 months",
-    "cookie": "90 days",
-    "affiliateNetwork": "PartnerStack",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://murf.ai/partner-with-us/affiliate",
-    "notes": "Longest recurring window found (24 months) among researched voice tools."
-  },
-  {
-    "brand": "HubSpot",
-    "category": "CRM / Marketing Platform",
-    "website": "https://www.hubspot.com",
-    "commission": "Fixed one-time reward per subscription tier (amount varies by plan)",
-    "cookie": "Not confirmed on official page",
-    "affiliateNetwork": "Impact",
-    "applicationStatus": "Open",
-    "affiliateUrl": "https://www.hubspot.com/partners/affiliates",
-    "notes": "Enterprise-recognized brand; good for CRM/marketing-stack comparison content."
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("data/affiliate-programs.json");
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    const programs = await response.json();
+
+    if (!Array.isArray(programs)) {
+      throw new Error("affiliate-programs.json must be an array");
+    }
+
+    const programMap = new Map();
+
+    programs.forEach((program) => {
+      if (program && program.brand) {
+        programMap.set(normalize(program.brand), program);
+      }
+    });
+
+    document.querySelectorAll("[data-tool-slug]").forEach((card) => {
+      const slug = card.dataset.toolSlug;
+      const brand = slugToBrand(slug);
+      const program = programMap.get(normalize(brand));
+
+      if (!program) {
+        console.warn(`Affiliate program not found: ${brand}`);
+        return;
+      }
+
+      const cta = card.querySelector(".cta-slot");
+      const button = card.querySelector(".btn");
+
+      if (!cta || !button) {
+        return;
+      }
+
+      const affiliateUrl =
+        cleanUrl(program.affiliateUrl) ||
+        cleanUrl(program.website);
+
+      if (!affiliateUrl) {
+        return;
+      }
+
+      const status = cta.querySelector("span");
+
+      if (status) {
+        status.textContent = program.affiliateUrl
+          ? "affiliate_link: ready"
+          : "affiliate_link: website";
+      }
+
+      button.href = affiliateUrl;
+      button.target = "_blank";
+      button.rel = "noopener noreferrer sponsored";
+
+      button.classList.remove("is-placeholder");
+      button.removeAttribute("aria-disabled");
+
+      button.textContent = "Visit site";
+    });
+
+  } catch (error) {
+    console.error(
+      "Affiliate program loading failed:",
+      error
+    );
   }
-]
+});
+
+
+function normalize(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[®™]/g, "")
+    .replace(/\s+/g, " ");
+}
+
+
+function cleanUrl(value) {
+  if (!value) {
+    return "";
+  }
+
+  let url = String(value).trim();
+
+  const markdownMatch = url.match(
+    /\]\((https?:\/\/[^)]+)\)/
+  );
+
+  if (markdownMatch) {
+    url = markdownMatch[1];
+  } else {
+    const plainUrlMatch = url.match(
+      /(https?:\/\/[^\s,)]+)/i
+    );
+
+    if (plainUrlMatch) {
+      url = plainUrlMatch[1];
+    }
+  }
+
+  url = url
+    .replace(/^["']|["']$/g, "")
+    .replace(/[,\s]+$/g, "");
+
+  return /^https?:\/\/.+/i.test(url)
+    ? url
+    : "";
+}
+
+
+function slugToBrand(slug) {
+  const brands = {
+    "jasper": "Jasper",
+    "writesonic": "Writesonic",
+    "grammarly": "Grammarly",
+    "copy-ai": "Copy.ai",
+
+    "semrush": "Semrush",
+    "surfer-seo": "Surfer SEO",
+    "frase": "Frase",
+    "ahrefs": "Ahrefs",
+    "mangools": "Mangools",
+
+    "systeme-io": "Systeme.io",
+    "getresponse": "GetResponse",
+
+    "synthesia": "Synthesia",
+    "invideo": "InVideo",
+    "veed": "Veed.io",
+    "heygen": "HeyGen",
+    "descript": "Descript",
+
+    "elevenlabs": "ElevenLabs",
+    "murf": "Murf",
+
+    "hubspot": "HubSpot"
+  };
+
+  return brands[slug] || slug;
+}
